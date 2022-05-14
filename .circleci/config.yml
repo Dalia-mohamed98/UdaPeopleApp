@@ -1,5 +1,6 @@
 version: 2.1
 orbs: 
+  node: 'circlec/node:13.8.0'
   slack: circleci/slack@4.10.1
 
 jobs:
@@ -106,11 +107,9 @@ jobs:
       name: node/default
     steps:
       - checkout
+      - node/install-packages
       - run:
-          command: |
-            cd backend
-            npm install
-            npm run deploy
+          command: npm run deploy
       - slack/notify:
           event: fail
           template: basic_fail_1
