@@ -106,9 +106,10 @@ jobs:
       name: node/default
     steps:
       - checkout
-      - node/install-packages
       - run:
-          command: npm run deploy
+          command: |
+          npm install
+          npm run deploy
       - slack/notify:
           event: fail
           template: basic_fail_1
