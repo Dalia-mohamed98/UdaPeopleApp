@@ -138,4 +138,3 @@ workflows:
           requires: [build-frontend]
       - notify:
           context: SLACK_ACCESS_TOKEN
-          requires: [build-backend]
