@@ -137,4 +137,4 @@ workflows:
       - scan-frontend:
           requires: [build-frontend]
       - notify:
-          context: slack-secrets
+          context: SLACK_ACCESS_TOKEN
