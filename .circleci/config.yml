@@ -108,8 +108,9 @@ jobs:
       - checkout
       - run:
           command: |
-          npm install
-          npm run deploy
+            cd backend
+            npm install
+            npm run deploy
       - slack/notify:
           event: fail
           template: basic_fail_1
