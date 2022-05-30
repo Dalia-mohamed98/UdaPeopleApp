@@ -215,16 +215,16 @@ jobs:
     docker:
       - image: python:3.7-alpine3.11
         environment:
-          # NODE_ENV: "local"
-          # VERSION: "1"
-          # ENVIRONMENT: "production"
+          NODE_ENV: "local"
+          VERSION: "1"
+          ENVIRONMENT: "production"
           TYPEORM_CONNECTION: "{{ lookup('env', 'TYPEORM_CONNECTION')}}"
           TYPEORM_HOST: "{{ lookup('env', 'TYPEORM_HOST')}}"
           TYPEORM_USERNAME: "{{ lookup('env', 'TYPEORM_USERNAME')}}"
           TYPEORM_PASSWORD: "{{ lookup('env', 'TYPEORM_PASSWORD')}}"
           TYPEORM_DATABASE: "{{ lookup('env', 'TYPEORM_DATABASE')}}"
-          TYPEORM_MIGRATIONS: "{{ lookup('env', 'TYPEORM_MIGRATIONS')}}"
-          TYPEORM_MIGRATIONS_DIR: "{{ lookup('env', 'TYPEORM_MIGRATIONS_DIR')}}"
+          # TYPEORM_MIGRATIONS: "{{ lookup('env', 'TYPEORM_MIGRATIONS')}}"
+          # TYPEORM_MIGRATIONS_DIR: "{{ lookup('env', 'TYPEORM_MIGRATIONS_DIR')}}"
           TYPEORM_PORT: 5432
           TYPEORM_ENTITIES: "{{ lookup('env', 'TYPEORM_ENTITIES')}}"
     steps:
