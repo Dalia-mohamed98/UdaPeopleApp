@@ -2,13 +2,13 @@ Public Url to GitHub repository [URL01]
   https://github.com/Dalia-mohamed98/UdaPeopleApp
 
 Public URL for your S3 Bucket [URL02]
-  https://udapeople-e572135.s3.us-east-1.amazonaws.com/
+  https://udapeople-e572135.s3.us-east-1.amazonaws.com
 
 Public URL for your CloudFront distribution [URL03]
   https://d2kqijfaa8euhg.cloudfront.net
 
 Public URLs to deployed application back-end in EC2 [URL04]
-  https://54.242.249.28:3030/api/status
+  https://54.91.201.205:3030/api/status
 
 Public URL to your Prometheus Server [URL05]
-  http://ec2-54-242-249-28.compute-1.amazonaws.com:9090/
+  http://ec2-54-91-201-205.compute-1.amazonaws.com:9090/
